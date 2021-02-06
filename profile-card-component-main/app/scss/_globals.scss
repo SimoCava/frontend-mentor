@@ -21,7 +21,46 @@ body {
   background-color: $dark-cyan;
   overflow: hidden;
   @include flex(column, center, center);
-  background: url("/images/background-pattern-top.svg") bottom 50vh right 50vw no-repeat, url("/images/background-pattern-bottom.svg") top 50vh left 50vw no-repeat, #19a2ae;
+  
+  &::before {
+    content: "";
+    background: url("/images/bg-pattern-top.svg");
+    background-repeat: repeat;
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 16%;
+    left: -50%;
+    background-size: contain;
+
+    @include breakpoint-up(medium) {
+      bottom: 36%;
+      left: -14%;
+    }
+  }
+
+  &::after {
+    content: "";
+    background: url("/images/bg-pattern-bottom.svg");
+    background-repeat: repeat;
+    background-size: auto;
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    background-size: contain;
+
+    @include breakpoint-up(medium) {
+      top: 49%;
+      left: 49%;
+    }
+  }
 }
 
 h3,
