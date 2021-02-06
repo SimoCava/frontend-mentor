@@ -1,0 +1,87 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: $font-med;
+  color: $very-dark-desaturated-blue;
+  background-color: $dark-cyan;
+  overflow: hidden;
+  @include flex(column, center, center);
+
+  &::before {
+    content: "";
+    background: url("/images/bg-pattern-top.svg");
+    background-repeat: repeat;
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 16%;
+    left: -50%;
+    background-size: contain;
+
+    @include breakpoint-up(medium) {
+      bottom: 36%;
+      left: -14%;
+    }
+  }
+
+  &::after {
+    content: "";
+    background: url("/images/bg-pattern-bottom.svg");
+    background-repeat: repeat;
+    background-size: auto;
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    background-size: contain;
+
+    @include breakpoint-up(medium) {
+      top: 49%;
+      left: 49%;
+    }
+  }
+}
+
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+h4 {
+  color: $dark-grayish-blue;
+  font-weight: 400;
+  font-size: $font-sm;
+}
+
+h5 {
+  color: $dark-grayish-blue;
+  font-size: $font-xs;
+  font-weight: 400;
+  letter-spacing: 1px;
+}

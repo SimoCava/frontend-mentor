@@ -1,0 +1,80 @@
+.card {
+  position: absolute;
+  border-radius: 0.875rem;
+  background-color: $white;
+  @include flex(column, center, center);
+  margin: 0 1.5rem;
+  width: 100%;
+  max-width: 20.375rem;
+  box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.04),
+    0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+  z-index: 999;
+
+  @include breakpoint-up(large) {
+    max-width: 21.875rem;
+  }
+
+  &__header {
+    position: relative;
+    height: 8.75rem;
+    width: 100%;
+    background: url("/images/bg-pattern-card.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.875rem 0.875rem 0 0;
+
+    .card__avatar {
+      position: absolute;
+      left: 50%;
+      top: 60%;
+      transform: translate(-50%, 0%);
+      height: 6.5rem;
+      border-radius: 50%;
+      border: 5px solid $white;
+    }
+  }
+
+  &__personal-data {
+    @include flex(column, center, center);
+    margin: 4.2rem 0 1.75rem;
+
+    .data-info {
+      display: flex;
+      margin-bottom: 0.813rem;
+
+      &__name {
+        margin-right: 0.5rem;
+      }
+
+      &__age {
+        font-weight: 400;
+        color: $dark-grayish-blue;
+      }
+    }
+  }
+
+  &__statistics {
+    @include flex(row, space-between, center);
+    width: 100%;
+    padding: 1.75rem;
+    border-top: 1px solid $dark-gray;
+
+    .statistic {
+      @include flex(column, center, center);
+
+      &__quantity {
+        margin-bottom: 0.313rem;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: $font-xs;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 3%;
+}
