@@ -1,0 +1,13 @@
+button {
+  color: $light-gray;
+  background: $brigh-yellow;
+  font-weight: $fw-bold;
+  outline: none;
+  border: none;
+  padding: 0.875rem;
+  width: 100%;
+  border-radius: 0.313rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+}

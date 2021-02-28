@@ -1,0 +1,57 @@
+// Text Colors
+.text-cyan {
+  color: #2ab2af !important;
+}
+.text-brigh-yellow {
+  color: #c0df34 !important;
+}
+.text-light-gray {
+  color: #e5eff5 !important;
+}
+.text-grayish-blue {
+  color: #98a6bd !important;
+}
+.text-viking {
+  color: #4abebd !important;
+}
+
+// Background
+.bg-cyan {
+  background-color: #2ab2af !important;
+}
+.bg-brigh-yellow {
+  background-color: #c0df34 !important;
+}
+.bg-light-gray {
+  background-color: #e5eff5 !important;
+}
+.bg-grayish-blue {
+  background-color: #98a6bd !important;
+}
+.bg-viking {
+  background-color: #4abebd !important;
+}
+
+// Font Weight
+.fw-normal {
+  font-weight: $fw-normal !important;
+}
+.fw-bold {
+  font-weight: $fw-bold !important;
+}
+
+// Margins
+.m-b-16 {
+  margin-bottom: 1rem;
+}
+.m-b-24 {
+  margin-bottom: 1.5rem;
+}
+.m-b-32 {
+  margin-bottom: 2rem;
+}
+
+// Width
+.w-80 {
+  width: 80%;
+}

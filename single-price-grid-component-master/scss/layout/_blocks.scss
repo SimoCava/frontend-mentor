@@ -1,0 +1,17 @@
+.block-1 {
+  grid-area: block-1;
+  border-radius: 0.313rem 0.313rem 0 0;
+}
+
+.block-2 {
+  grid-area: block-2;
+
+  @include breakpoint-up(large) {
+    border-radius: 0 0 0 0.313rem;
+  }
+}
+
+.block-3 {
+  grid-area: block-3;
+  border-radius: 0 0 0.313rem 0.313rem;
+}
